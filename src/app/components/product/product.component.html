@@ -1,0 +1,9 @@
+<app-toolbar class="up-toolbar" [isBackHidden]="false"  title="Product"></app-toolbar>
+<div class="product-image">
+  <img class="product-image" src="https://www.thurrott.com/wp-content/uploads/2018/02/pwa.jpg" alt="">
+</div>
+<ul class = "product-info">
+  <li *ngFor="let info of productInfos">
+    <span class="product-info-label">{{info.label}}:</span> <span class="product-info-value">{{info.value}}</span>
+  </li>
+</ul>

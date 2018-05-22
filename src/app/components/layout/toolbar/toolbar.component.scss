@@ -1,0 +1,26 @@
+.title-center {
+  margin: 0 auto;
+}
+
+mat-toolbar {
+  background-color: #0B75B0 !important;
+  color: white;
+  font-family: Ubuntu, sans-serif;
+  text-align: center;
+  box-shadow: 0 2px 4px #222;
+}
+
+.navbar-button {
+  min-width: 50px;
+  position: absolute;
+  right: 0;
+}
+
+.navbar-back-button {
+  min-width: 50px;
+  position: absolute;
+  left: 0;
+  font-size: 1em;
+}
+
+

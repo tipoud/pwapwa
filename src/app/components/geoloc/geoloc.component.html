@@ -1,0 +1,25 @@
+<app-toolbar class="up-toolbar" [title] = "title"></app-toolbar>
+<div class="app-view-container">
+  <div class="container">
+    <div class="form-group">
+      <input placeholder="search for location" type="text" class="form-control" #search id="searchForm" [formControl]="searchControl">
+    </div>
+  </div>
+
+  <agm-map [latitude]="lat" [longitude]="lng" [usePanning]="true">
+    <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+  </agm-map>
+  <div class="search-container">
+    <button mat-button (click)="toMyPosition()">
+      MY POSITION
+    </button>
+  </div>
+</div>
+<div class="spinner-container" [hidden]="isLoaderHidden">
+  <div class="truc">
+  <mat-spinner>
+    <mat-progress-spinner mode="indeterminate"></mat-progress-spinner>
+  </mat-spinner>
+  </div>
+</div>
+

@@ -1,0 +1,32 @@
+.scan-actions-container {
+  overflow-y: auto;
+  flex: 1 1 auto;
+  z-index: 99;
+}
+
+.scan-list-title {
+  flex: initial;
+  padding: 4px;
+}
+
+.scan-result {
+  margin: 15px;
+  border: 2px solid #0B75B0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  //box-shadow: 2px 2px 5px #222222;
+}
+
+.barcode-type {
+  flex: initial;
+  padding: 5px;
+  border-radius: 7px 0 0 7px;
+  background-color: #0B75B0;
+  color: white;
+}
+
+.barcode-value {
+  flex: auto;
+  align-self: center;
+}

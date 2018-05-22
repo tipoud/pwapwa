@@ -1,0 +1,7 @@
+<mat-toolbar>
+  <button mat-button  class="navbar-back-button" (click)="goBack()" [hidden]="isBackHidden">
+    <i class="fas fa-long-arrow-alt-left"></i>
+  </button>
+  <span class="title-center">{{ title }}</span>
+  <button mat-button class="navbar-button" (click)="onRightButtonClick()"> <i [class]= rightIcon ></i> </button>
+</mat-toolbar>

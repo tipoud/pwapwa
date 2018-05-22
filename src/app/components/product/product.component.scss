@@ -1,0 +1,33 @@
+.product-image {
+  text-align: center;
+
+  img {
+    margin: 10px;
+    width: 60%;
+    height: 200px;
+  }
+}
+
+.product-info {
+  margin: 10px;
+  list-style-type: none;
+  color: #606060;
+
+
+  li {
+    padding: 5px 0 5px 0;
+    margin: 2px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .product-info-label {
+    flex: initial;
+    width: 25%;
+    padding-right: 10px;
+  }
+
+  .product-info-value {
+    flex: auto;
+  }
+}

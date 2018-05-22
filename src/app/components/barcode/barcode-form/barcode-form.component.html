@@ -1,0 +1,13 @@
+<h3 class="scan-list-title">
+  {{title}}
+</h3>
+<div class="scan-actions-container">
+  <ul>
+    <li *ngFor="let barcode of barcodes" routerLink="/product" [queryParams]="{code: barcode.code}">
+      <div class="scan-result">
+        <span class="barcode-type">{{barcode.format}}</span>
+        <span class="barcode-value"> {{barcode.code}}</span>
+      </div>
+    </li>
+  </ul>
+</div>
